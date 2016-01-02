@@ -11,6 +11,168 @@ body > div
 		margin 0 auto
 		position relative
 		width 400px
+	&.lanterna
+		.corpo
+			background-color #000
+			overflow hidden
+			.rosto
+				background-color #D5B697
+				border-radius 185px 185px 0 0
+				display block
+				float left
+				height 450px
+				overflow hidden
+				position relative
+				width 400px
+				z-index 4
+				&:before
+				&:after
+					border-bottom 85px solid #00823c
+					border-left 0px solid transparent
+					border-right 120px solid transparent
+					bottom 0
+					content ''
+					left 0
+					position absolute
+				&:after
+					border-left 120px solid transparent
+					border-right 0px solid transparent
+					left auto
+					right 0
+				.mascara
+					display block
+					height 120px
+					margin 200px auto 0
+					position relative
+					width 320px
+					&:before 
+					&:after 
+						background-color #00823C
+						content ''
+						position absolute
+						top 0
+						left 0
+						height 120px
+						width 150px
+						-webkit-transform skew(0deg, 20deg)
+						-moz-transform skew(0deg, 20deg)
+						-ms-transform skew(0deg, 20deg)
+						-o-transform skew(0deg, 20deg)
+						transform skew(0deg, 20deg)
+					&:after 
+						left auto
+						right 0
+						-webkit-transform skew(0deg, -20deg)
+						-moz-transform skew(0deg, -20deg)
+						-ms-transform skew(0deg, -20deg)
+						-o-transform skew(0deg, -20deg)
+						transform skew(0deg, -20deg)
+					.olho-esq
+					.olho-dir
+						border-left 25px solid transparent
+						border-right 25px solid transparent
+						border-top 30px solid #fff
+						bottom 35px
+						left 25px
+						position absolute
+						width 50px
+						z-index 2
+						&:before
+							border-bottom 20px solid #fff
+							border-left 30px solid transparent
+							border-right 70px solid transparent
+							content ''
+							display block
+							left -25px
+							position absolute
+							top -50px
+						&:after
+							border-bottom 60px solid transparent
+							border-right 50px solid #00823C
+							border-top 60px solid transparent
+							content ''
+							left -100px
+							position absolute
+							top -112px
+					.olho-dir
+						left auto
+						right 25px
+						&:before
+							border-left 70px solid transparent
+							border-right 30px solid transparent
+							left auto
+							right -25px
+						&:after
+							border-left 50px solid #00823C
+							border-right 0
+							left auto
+							right -100px
+					.nariz
+						background-color #00823C
+						display block
+						height 120px
+						left 150px
+						position absolute
+						top 27px
+						width 20px
+						&:before
+							border-bottom 85px solid #3FB24B
+							border-left 15px solid transparent
+							border-right 0px solid transparent
+							bottom 5px
+							display block
+							content ''
+							left -5px
+							position absolute
+							z-index 2
+			.bg-simbolo
+				background-color #00823c
+				display block
+				height 400px
+				margin 180px auto 0
+				transform rotate(45deg)
+				width 400px
+				.bola
+					background-color #fff
+					border 12px solid #00823c
+					border-radius 50%
+					bottom -30px
+					box-shadow 0 0 0 3px rgba(0,0,0,.4)
+					display block
+					height 114px
+					position absolute
+					right -30px
+					width 114px
+					.lantern
+						animation pulse 3s linear infinite
+						border 10px solid #00823c
+						border-radius 50%
+						display block
+						height 45px
+						margin 25px auto
+						position relative
+						width 45px
+						z-index 3
+						&:before
+						&:after
+							background-color #00823c
+							content ''
+							display block
+							height 10px
+							left -31px
+							position absolute
+							top -8px
+							transform rotate(-45deg)
+							width 55px
+							z-index 5
+						&:after
+							left auto
+							right -30px
+							top 42px
+							
+							
+								
+
 	&.flash
 		.corpo
 			background-color #BB262A
@@ -135,7 +297,7 @@ body > div
 							right -25px
 			.raio
 				background-color #fff
-				border 1px solid #000
+				border 2px solid #000
 				border-radius 50%
 				bottom 100px
 				box-shadow 0 0 0 12px #F3E928
@@ -147,7 +309,8 @@ body > div
 				&:before
 					border-left 57px solid transparent
 					border-right 130px solid transparent
-					border-top 40px solid #000
+					border-top 40px solid #f3e928
+					box-shadow 0px -3px 0px -1px #000
 					content ''
 					display block
 					height 0
@@ -157,10 +320,11 @@ body > div
 					top 35px
 					width 0
 				&:after
-					border-bottom 40px solid #000
+					border-bottom 40px solid #f3e928
 					border-left 130px solid transparent
 					border-right 57px solid transparent
 					bottom 12px
+					box-shadow 0px 3px 0px -1px #000
 					content ''
 					display block
 					height 0
@@ -388,11 +552,17 @@ body > div
 
 // ANIMACAO
 @keyframes piscar {
-	0%{ height: 25px;}
-	40%{ height: 185px;}
-	60%{ height: 25px;}
-	80%{ height: 185px;}
-	100% { height: 25px;}
+	0%{ height: 25px; }
+	40%{ height: 185px; }
+	60%{ height: 25px; }
+	80%{ height: 185px; }
+	100% { height: 25px; }
+}
+
+@keyframes pulse {
+	0%{ box-shadow: 0 0 0px 0px rgba(63,180,0,0.6), inset 0 0 0px 0px rgba(63,180,0,0.6); }
+	50%{ box-shadow: 0 0 15px 25px rgba(63,180,0,0.6), inset 0 0 15px 15px rgba(63,180,0,0.6); }
+	100%{ box-shadow: 0 0 0px 0px rgba(63,180,0,0.6), inset 0 0 0px 0px rgba(63,180,0,0.6); }
 }
 					
 			

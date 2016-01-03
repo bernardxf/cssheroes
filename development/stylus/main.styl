@@ -11,12 +11,146 @@ body > div
 		margin 0 auto
 		position relative
 		width 400px
+		
+	&.capitao
+		.corpo
+			background-color #20346f
+			box-shadow 0 2px 0px #000
+			.rosto
+				background-color #D7B59C
+				border-radius 185px 185px 0 0
+				display block
+				height 450px
+				position relative
+				width 400px
+				&:before
+				&:after
+					border-bottom 85px solid #20346f
+					border-left 0px solid transparent
+					border-right 120px solid transparent
+					bottom 0
+					content ''
+					left 0
+					position absolute
+				&:after
+					border-left 120px solid transparent
+					border-right 0px solid transparent
+					left auto
+					right 0
+				.mascara
+					background-color #20346f
+					border-radius 185px 185px 0 0
+					display block
+					height 250px
+					position relative
+					width 400px
+					&:before
+					&:after
+						border-bottom 40px solid #20346f
+						border-left 140px solid transparent
+						border-right 60px solid transparent
+						bottom -40px
+						content ''
+						height 0
+						left 0
+						position absolute
+						transform rotate(180deg)
+						width 0
+					&:after
+						border-left 60px solid transparent
+						border-right 140px solid transparent
+						left auto
+						right 0
+					.letra
+						color #fff
+						display block
+						float left
+						font-family 'Russo One', sans-serif
+						font-size 115px
+						margin 25px 0 0
+						text-align center
+						width 100%
+					.olho-esq
+					.olho-dir
+						border-left 25px solid transparent
+						border-right 25px solid transparent
+						border-top 30px solid #fff
+						bottom 0
+						height 0
+						left 50px
+						position absolute
+						width 50px
+						&:before
+							border-bottom 20px solid #fff
+							border-left 30px solid transparent
+							border-right 70px solid transparent
+							content ''
+							display block
+							left -25px
+							position absolute
+							top -50px
+					.olho-dir
+						left auto
+						right 50px
+						&:before
+							border-left 70px solid transparent
+							border-right 30px solid transparent
+							left auto
+							right -25px
+				.boca
+					background-color #B69A86
+					border-radius 10px
+					display block
+					margin 90px auto 0
+					height 12px
+					width 100px
+			.estrela
+				border-bottom 70px  solid #fff
+				border-left   100px solid transparent
+				border-right  100px solid transparent
+				display block
+				left 102px
+				position relative
+				top 50px
+				transform scale(.6) rotate(35deg)
+				width 0
+				&:before
+					border-bottom 80px solid #fff
+					border-left 30px solid transparent
+					border-right 30px solid transparent
+					content ''
+					display block
+					position absolute
+					top -45px
+					left -65px
+					transform rotate(-35deg)
+				&:after
+					border-bottom 70px solid #fff
+					border-left 100px solid transparent
+					border-right 100px solid transparent
+					content ''
+					display block
+					position absolute
+					top 3px
+					left -105px
+					transform rotate(-70deg)
+			.listras
+				background-color #C0120B
+				background-image linear-gradient(90deg, transparent 50%, #fff 50%)
+				background-size 89px 50px
+				border-radius 0 0 52px 52px
+				display block
+				height 190px
+				float left
+				margin 90px 0 0
+				width 100%
+
 	&.lanterna
 		.corpo
 			background-color #000
 			overflow hidden
 			.rosto
-				background-color #D5B697
+				background-color #754F38
 				border-radius 185px 185px 0 0
 				display block
 				float left
@@ -94,6 +228,17 @@ body > div
 							left -100px
 							position absolute
 							top -112px
+						.iris
+							background-color #5BBC4B
+							border-radius 50%
+							bottom 5px
+							display block
+							height 30px
+							left 10px
+							position absolute
+							width 30px
+							z-index 4
+							
 					.olho-dir
 						left auto
 						right 25px
@@ -125,6 +270,12 @@ body > div
 							left -5px
 							position absolute
 							z-index 2
+				.boca
+					border-top 5px solid #563320
+					display block
+					margin 75px auto 0
+					height 1px
+					width 100px
 			.bg-simbolo
 				background-color #00823c
 				display block
@@ -170,9 +321,6 @@ body > div
 							right -30px
 							top 42px
 							
-							
-								
-
 	&.flash
 		.corpo
 			background-color #BB262A
@@ -295,6 +443,14 @@ body > div
 							border-right 30px solid transparent
 							left auto
 							right -25px
+				.boca
+					background-color #B69A86
+					border-radius 5px 5px 25px 25px
+					display block
+					margin 90px auto 0
+					height 30px
+					width 100px
+					
 			.raio
 				background-color #fff
 				border 2px solid #000
@@ -529,14 +685,6 @@ body > div
 						margin 35px auto 0
 						position relative
 						width 90px
-						// &:before
-						// 	background-color #000
-						// 	border-radius 50%
-						// 	content 'G'
-						// 	display block
-						// 	height 40px
-						// 	margin 15px auto 0
-						// 	width 40px
 				.baixo
 					background repeating-linear-gradient(45deg, #608EB0, #608EB0 2px, #2C5A7E 2px, #2C5A7E 4px)
 					border 2px dashed #B0C4A9

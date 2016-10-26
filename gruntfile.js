@@ -28,7 +28,7 @@ module.exports = function(grunt) {
 					'test/css/main.css': ['development/stylus/main.styl']
 				}
 			}
-        },
+		},
 
 		watch: {
 			stylus: {
@@ -43,8 +43,8 @@ module.exports = function(grunt) {
 	});
 
 	grunt.registerTask('test', [
-      'jade',
-      'stylus', 
-      'watch']
-    );
+		'jade',
+		'stylus', 
+		'watch']
+	);
 }

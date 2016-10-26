@@ -11,7 +11,88 @@ body > div
 		margin 0 auto
 		position relative
 		width 400px
-		
+	&.hulk
+		.corpo
+			background-color #158202
+			.rosto
+				background-color #D7B59C
+				border-radius 185px 185px 0 0
+				display block
+				float left
+				height 450px
+				position relative
+				width 400px
+				.olho-esq
+				.olho-dir
+					border-left 25px solid transparent
+					border-right 25px solid transparent
+					border-top 30px solid #fff
+					height 0
+					margin 0 0 0 50px
+					position relative
+					width 50px
+					&:before
+						border-bottom 20px solid #fff
+						border-left 30px solid transparent
+						border-right 70px solid transparent
+						content ''
+						display block
+						left -25px
+						position absolute
+						top -50px
+				.olho-dir
+					margin 0 50px 0 0
+					&:before
+						border-left 70px solid transparent
+						border-right 30px solid transparent
+						left auto
+						right -25px
+				.boca
+					background #290A08
+					border 1px solid #000
+					border-radius 25px
+					display block
+					height 80px
+					margin 30px auto 0
+					overflow hidden
+					position relative
+					width 200px
+					.dente
+						background radial-gradient( circle, #fff 55%, #B1ADAE)
+						border-radius 10px
+						display block
+						float left
+						height 50px
+						position relative
+						width 50px
+						&:nth-child(1)
+						&:nth-child(2)
+						&:nth-child(3)
+						&:nth-child(4)
+							margin -10px 0 0
+			.abdomen
+				display inline-block
+				margin 22px auto
+				width 108px
+				span
+					background radial-gradient(circle, transparent 55%, rgba(0,0,0,.5))
+					border-radius 10px
+					display block
+					float left
+					height 50px
+					margin 2px
+					position relative
+					width 50px
+			.short
+				background repeating-linear-gradient(45deg, #608EB0, #608EB0 2px, #2C5A7E 2px, #2C5A7E 4px)
+				border 2px dashed #B0C4A9
+				border-radius 0 0 50px 50px
+				box-shadow 0 0 0 3px #2C5A7E, 0 6px 5px rgba(0,0,0,.8)
+				display block
+				float left
+				height 130px
+				margin 3px 0 0 3px
+				width 390px
 	&.capitao
 		.corpo
 			background-color #20346f
